@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("/images/bg1.jpg");
+}
+.head-text{
+    color:aqua;
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem;
+}
