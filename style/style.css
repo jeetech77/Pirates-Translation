@@ -3,10 +3,11 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    transition: .3s linear;
+    transition: all .3s linear;
 }
 
 :root {
+    --sec-color:aqua;
     --primary-color: brown;
 }
 
@@ -45,37 +46,47 @@ textarea {
     height: 25vh;
     background: inherit;
     border: 3px solid var(--primary-color);
-    color: aqua;
+    color: var(--sec-color);
     font-size: large;
     font-weight: bold;
     outline: none;
     text-align: center;
     padding: 1rem;
+    border-radius: 15px;
+
 }
 
 textarea::placeholder {
     color: var(--primary-color);
     text-align: center;
 }
+textarea:focus::placeholder {
+    /* transition: all .3s ease-in-out; */
+    color: var(--sec-color);
+}
+textarea:focus{
+    border-color: var(--sec-color);
+    border-radius: 15px;
+}
 .btn{
     margin:1rem auto;
     display: block;
     padding: .6rem 1.2rem;
     background: initial;
-    color: aqua;
+    color: var(--sec-color);
     font-weight: bold;
+    border-radius: 10px;
     border: 2px solid var(--primary-color);
 
 }
 .btn:hover{
     color: var(--primary-color);
-    border-color: aqua;
+    border-color: var(--sec-color);
 }
 
 .remarks {
-    color: var(--primary-color);
+    color: var(--sec-color);
     font-size: large;
-    color: rgb(0, 255, 255);
 }
 
 .output-text {
@@ -83,7 +94,12 @@ textarea::placeholder {
     border: 3px solid var(--primary-color);
     width: 80vw;
     margin: 2rem auto;
-    color: aqua;
+    color: var(--sec-color);
+    text-align: center;
+    font-family: initial;
+    padding: 1rem;
+    border-radius: 15px;
+
 }
 
 .foot-text {
