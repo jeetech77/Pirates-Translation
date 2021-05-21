@@ -12,6 +12,7 @@
 }
 
 body{
+    font-family: 'Courgette',cursive;
     font-weight: 700;
 }
 .head-text,
@@ -57,11 +58,11 @@ textarea {
 }
 
 textarea::placeholder {
+    font-size: larger;
     color: var(--primary-color);
     text-align: center;
 }
 textarea:focus::placeholder {
-    /* transition: all .3s ease-in-out; */
     color: var(--sec-color);
 }
 textarea:focus{
@@ -73,18 +74,20 @@ textarea:focus{
     display: block;
     padding: .6rem 1.2rem;
     background: initial;
-    color: var(--sec-color);
+    color: var(--primary-color);
     font-weight: bold;
     border-radius: 10px;
     border: 2px solid var(--primary-color);
 
 }
 .btn:hover{
-    color: var(--primary-color);
+    color: var(--sec-color);
     border-color: var(--sec-color);
 }
 
 .remarks {
+    background-color: rgba(114, 45, 45, 0.466);
+    background-position: ;
     color: var(--sec-color);
     font-size: large;
 }
