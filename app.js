@@ -13,4 +13,8 @@ translateBtn.addEventListener('click', () => {
         translatedText=json.contents.translated;
         outputArea.innerHTML=translatedText;
     })
+    .catch(errorHandling);
 })
+function errorHandling(error){
+    alert("Some Error Occured, Try After Sometime");
+}
