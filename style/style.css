@@ -70,6 +70,7 @@ textarea:focus{
     border-radius: 15px;
 }
 .btn{
+    outline:none;
     margin:1rem auto;
     display: block;
     padding: .6rem 1.2rem;
