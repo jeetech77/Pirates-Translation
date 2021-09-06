@@ -98,6 +98,7 @@ textarea:focus{
     justify-content: center;
     align-items: center;
     height: 15vh;
+    background-color: rgba(0, 0, 0, 0.74);
     border: 3px solid var(--primary-color);
     width: 80vw;
     margin: 2rem auto;
