@@ -1,12 +1,12 @@
-var inputArea = document.querySelector(".input-text");
-var translateBtn = document.querySelector(".btn");
-var outputArea = document.querySelector(".output-text");
-var url = "	https://api.funtranslations.com/translate/pirate.json";
+const inputArea = document.querySelector(".input-text");
+const translateBtn = document.querySelector(".btn");
+const outputArea = document.querySelector(".output-text");
+const url = "	https://api.funtranslations.com/translate/pirate.json";
 function constructURL(text) {
     return (url + "?text=" + text);
 }
 translateBtn.addEventListener('click', () => {
-    var inputText = inputArea.value;
+    const inputText = inputArea.value;
     finalURL=constructURL(inputText);
     fetch(finalURL).then(Response=>Response.json())
     .then(json=>{
